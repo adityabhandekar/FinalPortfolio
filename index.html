@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aditya Bhandekar · Full-Stack Developer</title>
+<meta name="description" content="Aditya Bhandekar — Full-Stack Developer. Java, Frontend." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- BLUEPRINT GRID BG -->
+<div class="bp-grid" aria-hidden="true"></div>
+
+<!-- CURSOR CROSSHAIR -->
+<div class="cursor-x" id="cursorX" aria-hidden="true">
+  <span class="cx-h"></span>
+  <span class="cx-v"></span>
+</div>
+
+<!-- ============ LEFT RAIL ============ -->
+<aside class="rail">
+  <div class="rail-top">
+    <a href="#home" class="rail-logo">
+      <span class="rail-logo-mark">AB</span>
+      <span class="rail-logo-text">aditya.dev</span>
+    </a>
+  </div>
+
+  <nav class="rail-nav" aria-label="Sections">
+    <a href="#home" class="rail-link active">
+      <span class="rail-num">01</span>
+      <span class="rail-label">home</span>
+    </a>
+    <a href="#about" class="rail-link">
+      <span class="rail-num">02</span>
+      <span class="rail-label">about</span>
+    </a>
+    <a href="#skills" class="rail-link">
+      <span class="rail-num">03</span>
+      <span class="rail-label">skills</span>
+    </a>
+    <a href="#projects" class="rail-link">
+      <span class="rail-num">04</span>
+      <span class="rail-label">projects</span>
+    </a>
+    <a href="#education" class="rail-link">
+      <span class="rail-num">05</span>
+      <span class="rail-label">education</span>
+    </a>
+    <a href="#contact" class="rail-link">
+      <span class="rail-num">06</span>
+      <span class="rail-label">contact</span>
+    </a>
+  </nav>
+
+  <div class="rail-foot">
+    <a href="resume.pdf" class="rail-resume" download>
+      <span>↓ resume.pdf</span>
+    </a>
+    <div class="rail-socials">
+      <a href="https://github.com/adityabhandekar" target="_blank" rel="noopener">gh</a>
+      <a href="https://www.linkedin.com/in/aditya-bhandekar-27b849336/?isSelfProfile=true" target="_blank" rel="noopener">in</a>
+      <a href="mailto:bhandekaraditya2@gmail.com">@</a>
+    </div>
+    <div class="rail-clock" id="railClock">--:--:--</div>
+  </div>
+</aside>
+
+<!-- ============ MOBILE BAR ============ -->
+<header class="mobile-bar">
+  <a href="#home" class="rail-logo">
+    <span class="rail-logo-mark">AB</span>
+  </a>
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation">
+  <a href="#home">01 / home</a>
+  <a href="#about">02 / about</a>
+  <a href="#skills">03 / skills</a>
+  <a href="#projects">04 / projects</a>
+  <a href="#education">05 / education</a>
+  <a href="#contact">06 / contact</a>
+  <a href="resume.pdf" download>↓ resume.pdf</a>
+</nav>
+
+<!-- ============ MAIN ============ -->
+<main class="main">
+
+  <!-- ========= HERO ========= -->
+  <section class="sec hero" id="home">
+    <div class="sec-rule">
+      <span class="rule-num">[ 01 ]</span>
+      <span class="rule-label">HOME</span>
+      <span class="rule-line"></span>
+      <span class="rule-side">// full-stack developer</span>
+    </div>
+
+    <div class="hero-body">
+      <div class="hero-left">
+        <div class="hero-status">
+          <span class="status-pulse"></span>
+          <span class="status-text">open_to_opportunities</span>
+          <span class="status-loc">· wardha, maharashtra, india</span>
+        </div>
+
+        <h1 class="hero-name">
+          <span class="hn-line hn-1">Aditya</span>
+          <span class="hn-line hn-2">Bhandekar<span class="hn-dot">.</span></span>
+        </h1>
+
+        <div class="hero-role-line">
+          <span class="hr-prefix">~/role:</span>
+          <span class="hr-rotator" id="rotatingRole">Full-Stack Developer</span>
+          <span class="hr-cursor">_</span>
+        </div>
+
+        <p class="hero-desc">
+          I build end-to-end products — reliable backends with Java &amp; Spring Boot,
+          REST APIs and databases underneath, and modern interfaces on top with React
+          and Flutter. Clean code, secure systems, thoughtful UX.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-fill">→ view projects</a>
+          <a href="#contact" class="btn btn-line">→ get in touch</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-k">projects</span>
+            <span class="stat-v">03</span>
+          </div>
+          <div class="stat">
+            <span class="stat-k">stack</span>
+            <span class="stat-v">10+</span>
+          </div>
+          <div class="stat">
+            <span class="stat-k">status</span>
+            <span class="stat-v stat-green">active</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="term">
+          <div class="term-head">
+            <span class="term-dots">
+              <span class="td td-r"></span>
+              <span class="td td-y"></span>
+              <span class="td td-g"></span>
+            </span>
+            <span class="term-title">~/aditya/portfolio — bash</span>
+            <span class="term-meta">80×24</span>
+          </div>
+          <div class="term-body">
+            <div class="tl"><span class="tp">$</span> <span class="tc">whoami</span></div>
+            <div class="tl"><span class="to">aditya.bhandekar — full-stack dev</span></div>
+            <div class="tl"><span class="tp">$</span> <span class="tc">cat profile.json</span></div>
+<pre class="term-json">{
+  <span class="jk">"name"</span>:     <span class="js">"Aditya Bhandekar"</span>,
+  <span class="jk">"role"</span>:     <span class="js">"Full-Stack Developer"</span>,
+  <span class="jk">"backend"</span>:  [<span class="js">"Java"</span>, <span class="js">"Spring Boot"</span>],
+  <span class="jk">"frontend"</span>: [<span class="js">"React"</span>, <span class="js">"Flutter"</span>],
+  <span class="jk">"data"</span>:     [<span class="js">"SQL"</span>, <span class="js">"MongoDB"</span>],
+  <span class="jk">"status"</span>:   <span class="js">"Learn_Build_Repeat"</span>
+}</pre>
+            <div class="tl"><span class="tp">$</span> <span class="tc" id="termTyping"></span><span class="term-caret">▊</span></div>
+          </div>
+          <div class="term-scan" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint">
+      <span>scroll</span>
+      <span class="sh-line"></span>
+    </a>
+  </section>
+
+  <!-- ========= ABOUT ========= -->
+  <section class="sec" id="about">
+    <div class="sec-rule">
+      <span class="rule-num">[ 02 ]</span>
+      <span class="rule-label">ABOUT</span>
+      <span class="rule-line"></span>
+      <span class="rule-side">// who i am</span>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-main">
+        <p class="about-lead">
+          Computer Engineering student and
+          <span class="hl">full-stack developer</span> — comfortable from
+          <span class="hl">database schemas</span> to
+          <span class="hl">React and Flutter interfaces</span>.
+        </p>
+        <p>
+          I build with Java, Spring Boot, React, Flutter, and SQL / MongoDB —
+          shipping features end-to-end, not just pieces. I care about clean code,
+          secure APIs, thoughtful data models, and interfaces people actually enjoy using.
+        </p>
+        <p>
+          I'm a student — I don't claim years of experience. I'm building real
+          projects, learning continuously, and getting better with every commit.
+        </p>
+
+        <div class="about-list">
+          <div class="ab-item">
+            <span class="ab-num">01</span>
+            <span class="ab-t">clean, maintainable code</span>
+          </div>
+          <div class="ab-item">
+            <span class="ab-num">02</span>
+            <span class="ab-t">secure API design</span>
+          </div>
+          <div class="ab-item">
+            <span class="ab-num">03</span>
+            <span class="ab-t">thoughtful database design</span>
+          </div>
+          <div class="ab-item">
+            <span class="ab-num">04</span>
+            <span class="ab-t">continuous learning</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="about-side">
+        <div class="corner-card">
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <div class="photo">
+            <div class="photo-inner" id="profilePhoto">
+              <img src="images/profile.jpg" alt="Aditya Bhandekar" onerror="this.remove()" />
+              <span class="photo-fallback">AB</span>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div><span class="pm-k">based</span><span class="pm-v">wardha, india</span></div>
+            <div><span class="pm-k">studying</span><span class="pm-v">b.tech cse</span></div>
+            <div><span class="pm-k">focus</span><span class="pm-v">full-stack</span></div>
+          </div>
+        </div>
+
+        <blockquote class="quote">
+          <span class="quote-mark">"</span>
+          Better With Every Bug
+          <cite>— Aditya Bhandekar</cite>
+        </blockquote>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ========= SKILLS ========= -->
+  <section class="sec" id="skills">
+    <div class="sec-rule">
+      <span class="rule-num">[ 03 ]</span>
+      <span class="rule-label">SKILLS</span>
+      <span class="rule-line"></span>
+      <span class="rule-side">// tools & tech</span>
+    </div>
+
+    <div class="skills-tabs" role="tablist">
+      <button class="tab active" role="tab" aria-selected="true" data-tab="backend">backend</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="frontend">frontend</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="languages">languages</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="databases">databases</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="tools">tools</button>
+    </div>
+
+    <div class="skills-panels">
+      <div class="panel active" data-panel="backend">
+        <div class="panel-head">
+          <span class="ph-k">~/skills/backend</span>
+          <span class="ph-c">5 items</span>
+        </div>
+        <div class="chips">
+          <span class="chip">Java</span>
+          <span class="chip">Spring Boot</span>
+          <span class="chip">REST APIs</span>
+          <span class="chip">FastAPI</span>
+          <span class="chip">JWT Authentication</span>
+        </div>
+      </div>
+
+      <div class="panel" data-panel="frontend">
+        <div class="panel-head">
+          <span class="ph-k">~/skills/frontend</span>
+          <span class="ph-c">5 items</span>
+        </div>
+        <div class="chips">
+          <span class="chip">React</span>
+          <span class="chip">Flutter</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">Bootstrap</span>
+        </div>
+      </div>
+
+      <div class="panel" data-panel="languages">
+        <div class="panel-head">
+          <span class="ph-k">~/skills/languages</span>
+          <span class="ph-c">6 items</span>
+        </div>
+        <div class="chips">
+          <span class="chip">Java</span>
+          <span class="chip">C++</span>
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">PHP</span>
+        </div>
+      </div>
+
+      <div class="panel" data-panel="databases">
+        <div class="panel-head">
+          <span class="ph-k">~/skills/databases</span>
+          <span class="ph-c">4 items</span>
+        </div>
+        <div class="chips">
+          <span class="chip">MySQL</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">Firebase</span>
+        </div>
+      </div>
+
+      <div class="panel" data-panel="tools">
+        <div class="panel-head">
+          <span class="ph-k">~/skills/tools</span>
+          <span class="ph-c">8 items</span>
+        </div>
+        <div class="chips">
+          <span class="chip">Git</span>
+          <span class="chip">GitHub</span>
+          <span class="chip">Postman</span>
+          <span class="chip">IntelliJ IDEA</span>
+          <span class="chip">Spring Tool Suite</span>
+          <span class="chip">VS Code</span>
+          <span class="chip">Android Studio</span>
+          <span class="chip">Figma</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= PROJECTS ========= -->
+  <section class="sec" id="projects">
+    <div class="sec-rule">
+      <span class="rule-num">[ 04 ]</span>
+      <span class="rule-label">PROJECTS</span>
+      <span class="rule-line"></span>
+      <span class="rule-side">// selected work</span>
+    </div>
+
+    <div class="proj-list">
+
+      <!-- 01 CLEANIFY -->
+      <article class="proj" data-project>
+        <div class="proj-head">
+          <div class="proj-idx">01</div>
+          <div class="proj-main">
+            <h3 class="proj-title">Cleanify</h3>
+            <p class="proj-tag">Home Cleaning Service App</p>
+          </div>
+        </div>
+
+        <p class="proj-desc">
+          A mobile application that allows users to select home-cleaning services,
+          schedule appointments, and manage bookings. Built as a full-stack
+          application with a Flutter frontend, a Spring Boot backend, and Firebase.
+        </p>
+
+        <div class="proj-meta">
+          <div class="pm"><span class="pm-k">team</span><span class="pm-v">2</span></div>
+          <div class="pm"><span class="pm-k">role</span><span class="pm-v">Backend Developer</span></div>
+          <a href="https://github.com/adityabhandekar/Cleanify2" target="_blank" rel="noopener" class="pm pm-link">
+            <span class="pm-k">link</span>
+            <span class="pm-v">view repo →</span>
+          </a>
+        </div>
+
+        <div class="proj-stack">
+          <span>Java</span><span>Spring Boot</span><span>Flutter</span><span>Firebase</span>
+        </div>
+
+        <button class="proj-toggle" aria-expanded="false">
+          <span class="pt-label">+ show details</span>
+        </button>
+
+        <div class="proj-detail" hidden>
+          <div class="pd-grid">
+            <div class="pd-col">
+              <h4>// overview</h4>
+              <p>A full-stack mobile application for booking home-cleaning services. Users can browse services, schedule appointments, and manage their bookings.</p>
+
+              <h4>// problem</h4>
+              <p>Finding reliable home cleaning services and managing bookings is often fragmented across calls and messages. Cleanify centralizes booking, service listings, and user management in one platform.</p>
+
+              <h4>// what we built</h4>
+              <p>A Flutter frontend connected to a Spring Boot backend, with Firebase for supporting services. REST APIs handle user management, service listings, and booking operations.</p>
+            </div>
+            <div class="pd-col">
+              <h4>// what i contributed</h4>
+              <ul class="pd-list">
+                <li>Spring Boot REST APIs for user management</li>
+                <li>Service listings endpoints</li>
+                <li>Booking operations</li>
+                <li>Full-stack integration (Flutter ↔ Spring Boot ↔ SQL)</li>
+              </ul>
+              <h4>// team</h4>
+              <p>2 developers — Flutter frontend and Java / Spring Boot backend, collaborating via Git.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 FINANCEADVISOR -->
+      <article class="proj" data-project>
+        <div class="proj-head">
+          <div class="proj-idx">02</div>
+          <div class="proj-main">
+            <h3 class="proj-title">AI Finance Advisor</h3>
+            <p class="proj-tag">AI-Powered Personal Finance Mentor</p>
+          </div>
+        </div>
+
+        <p class="proj-desc">
+          A full-stack finance platform that helps users track expenses, analyze
+          financial goals, compare EMIs, and explore financial insights — with
+          AI-powered recommendations via CrewAI multi-agent workflows and the Gemini API.
+        </p>
+
+        <div class="proj-meta">
+          <div class="pm"><span class="pm-k">team</span><span class="pm-v">3</span></div>
+          <div class="pm"><span class="pm-k">role</span><span class="pm-v">Full-Stack Developer</span></div>
+          <a href="https://github.com/adityabhandekar/finance-advisor" target="_blank" rel="noopener" class="pm pm-link">
+            <span class="pm-k">link</span>
+            <span class="pm-v">view repo →</span>
+          </a>
+        </div>
+
+        <div class="proj-stack">
+          <span>React.js</span><span>FastAPI</span><span>MongoDB</span><span>CrewAI</span><span>Gemini API</span>
+        </div>
+
+        <button class="proj-toggle" aria-expanded="false">
+          <span class="pt-label">+ show details</span>
+        </button>
+
+        <div class="proj-detail" hidden>
+          <div class="pd-grid">
+            <div class="pd-col">
+              <h4>// overview</h4>
+              <p>A full-stack finance platform that helps users track expenses, analyze financial goals, compare EMIs, and explore financial insights with AI-powered recommendations.</p>
+
+              <h4>// problem</h4>
+              <p>Personal finance tools often overwhelm users with data without context. FinanceAdvisor aims to give clear, actionable insight into spending, goals, and loan decisions.</p>
+
+              <h4>// what we built</h4>
+              <p>A React front end backed by FastAPI and MongoDB, with JWT authentication, responsive UI, financial data visualizations, and CrewAI + Gemini-powered recommendations.</p>
+            </div>
+            <div class="pd-col">
+              <h4>// what i contributed</h4>
+              <ul class="pd-list">
+                <li>Frontend-backend API integration</li>
+                <li>JWT authentication</li>
+                <li>MongoDB data management</li>
+                <li>Responsive UI components</li>
+                <li>Financial data visualizations</li>
+                <li>CrewAI multi-agent workflow integration</li>
+                <li>Gemini API integration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 WOMEN SAFETY -->
+      <article class="proj" data-project>
+        <div class="proj-head">
+          <div class="proj-idx">03</div>
+          <div class="proj-main">
+            <h3 class="proj-title">Women Safety App + IoT Device</h3>
+            <p class="proj-tag">Mobile App · Backend API · IoT Integration</p>
+          </div>
+        </div>
+
+        <p class="proj-desc">
+          A mobile application backed by a Spring Boot API, designed to work alongside
+          a phone-independent IoT safety device for emergency alerts and location sharing.
+        </p>
+
+        <div class="proj-meta">
+          <div class="pm"><span class="pm-k">team</span><span class="pm-v">individual</span></div>
+          <div class="pm"><span class="pm-k">role</span><span class="pm-v">Backend &amp; App Developer</span></div>
+          <a href="https://github.com/adityabhandekar/SmartSafetySystem-App" target="_blank" rel="noopener" class="pm pm-link">
+            <span class="pm-k">link</span>
+            <span class="pm-v">view repo →</span>
+          </a>
+        </div>
+
+        <div class="proj-stack">
+          <span>Java</span><span>Spring Boot</span><span>MongoDB</span><span>REST APIs</span><span>Android</span><span>IoT</span>
+        </div>
+
+        <button class="proj-toggle" aria-expanded="false">
+          <span class="pt-label">+ show details</span>
+        </button>
+
+        <div class="proj-detail" hidden>
+          <div class="pd-grid">
+            <div class="pd-col">
+              <h4>// overview</h4>
+              <p>A mobile application and backend API built to work with a phone-independent
+              IoT safety device. The app handles authentication, manages emergency contacts,
+              and coordinates alerts with the device.</p>
+
+              <h4>// problem</h4>
+              <p>Emergency response often depends on a working phone. A phone-independent
+              safety device can trigger alerts when a phone isn't accessible, and the app
+              provides the interface to manage contacts and receive alerts.</p>
+
+              <h4>// solution</h4>
+              <p>A Spring Boot backend exposing REST APIs for authentication, emergency
+              contacts, and alert workflows, paired with a mobile app for the user, and
+              designed to integrate with the hardware safety device.</p>
+            </div>
+            <div class="pd-col">
+              <h4>// features</h4>
+              <ul class="pd-list">
+                <li>User authentication (JWT)</li>
+                <li>Emergency contact management</li>
+                <li>SOS alert trigger from the app</li>
+                <li>Alert notifications to saved contacts</li>
+                <li>Location sharing during alerts</li>
+                <li>IoT device pairing and status</li>
+                <li>Phone-independent alert trigger from the device</li>
+              </ul>
+
+              <h4>// my contribution</h4>
+              <ul class="pd-list">
+                <li>Designed and built the mobile app</li>
+                <li>Built the Spring Boot backend and REST APIs</li>
+                <li>Implemented authentication and emergency contacts</li>
+                <li>Wired up the app-to-device alert workflow</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ========= WHAT I BRING ========= -->
+  <section class="sec" id="bring">
+    <div class="sec-rule">
+      <span class="rule-num">[ 05 ]</span>
+      <span class="rule-label">WHAT I BRING</span>
+      <span class="rule-line"></span>
+      <span class="rule-side">// value</span>
+    </div>
+
+    <div class="bring-grid">
+      <div class="bring-card">
+        <span class="bc-idx">01</span>
+        <h3>full-stack delivery</h3>
+        <p>I can take a feature from database schema → API → UI, so nothing falls through the cracks.</p>
+      </div>
+      <div class="bring-card">
+        <span class="bc-idx">02</span>
+        <h3>api &amp; database design</h3>
+        <p>Experience designing REST endpoints, schemas, and JWT authentication for real projects.</p>
+      </div>
+      <div class="bring-card">
+        <span class="bc-idx">03</span>
+        <h3>ui engineering</h3>
+        <p>Comfortable building clean interfaces with React and Flutter that feel fast and clear.</p>
+      </div>
+      <div class="bring-card">
+        <span class="bc-idx">04</span>
+        <h3>problem-solving &amp; learning</h3>
+        <p>I enjoy breaking down complex problems and continuously expanding my technical range.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= EDUCATION ========= -->
+  <section class="sec" id="education">
+    <div class="sec-rule">
+      <span class="rule-num">[ 06 ]</span>
+      <span class="rule-label">EDUCATION</span>
+      <span class="rule-line"></span>
+      <span class="rule-side">// academic</span>
+    </div>
+
+    <div class="edu-list">
+      <div class="edu-row">
+        <div class="edu-year">Pursuing</div>
+        <div class="edu-body">
+          <h3>B.Tech in Computer Engineering</h3>
+          <p class="edu-inst">Bajaj Institute of Technology, Wardha</p>
+          <p class="edu-note">Currently pursuing. Focus on backend engineering, DBMS, DSA, and software architecture. <span class="edu-grade">CGPA 6.5</span></p>
+        </div>
+      </div>
+      <div class="edu-row">
+        <div class="edu-year">2022 — 2024</div>
+        <div class="edu-body">
+          <h3>Diploma in Computer Engineering</h3>
+          <p class="edu-inst">Agnihotri School of Technology, Wardha</p>
+          <p class="edu-note">Built a strong foundation in programming, databases, and computer fundamentals. <span class="edu-grade">81%</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="extra-grid">
+      <div class="extra-card">
+        <h4>// certifications</h4>
+        <ul class="extra-list">
+          <li>Java Programming — IACT (2023)</li>
+          <li>Python Programming — IACT (2023)</li>
+          <li>C++ Programming — IACT (2023)</li>
+          <li>MSBTE State-Level Project Competition — 2024</li>
+        </ul>
+      </div>
+      <div class="extra-card">
+        <h4>// achievements</h4>
+        <ul class="extra-list">
+          <li>Represented college at MSBTE State-Level Project Competition (2024)</li>
+        </ul>
+        <h4 style="margin-top:18px;">// hobbies</h4>
+        <ul class="extra-list">
+          <li>Photography</li>
+          <li>Cooking</li>
+          <li>Music Composition</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= CONTACT ========= -->
+  <section class="sec" id="contact">
+    <div class="sec-rule">
+      <span class="rule-num">[ 07 ]</span>
+      <span class="rule-label">CONTACT</span>
+      <span class="rule-line"></span>
+      <span class="rule-side">// let's talk</span>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-side">
+        <p class="contact-lead">
+          Have an opportunity or an interesting idea?<br>
+          I'm interested in connecting with developers, teams and recruiters.
+        </p>
+
+        <div class="contact-list">
+          <a href="mailto:bhandekaraditya2@gmail.com" class="cl-row">
+            <span class="cl-k">email</span>
+            <span class="cl-v">bhandekaraditya2@gmail.com</span>
+            <span class="cl-a">→</span>
+          </a>
+          <a href="tel:+919579356195" class="cl-row">
+            <span class="cl-k">phone</span>
+            <span class="cl-v">+91 95793 56195</span>
+            <span class="cl-a">→</span>
+          </a>
+          <a href="https://github.com/adityabhandekar" target="_blank" rel="noopener" class="cl-row">
+            <span class="cl-k">github</span>
+            <span class="cl-v">/adityabhandekar</span>
+            <span class="cl-a">→</span>
+          </a>
+          <a href="https://linkedin.com/in/aditya-bhandekar-27b849336/?isSelfProfile=true" target="_blank" rel="noopener" class="cl-row">
+            <span class="cl-k">linkedin</span>
+            <span class="cl-v">/in/aditya-bhandekar-27b849336</span>
+            <span class="cl-a">→</span>
+          </a>
+          <a href="resume.pdf" class="cl-row" download>
+            <span class="cl-k">resume</span>
+            <span class="cl-v">download pdf</span>
+            <span class="cl-a">↓</span>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="cf-row">
+          <div class="cf-field">
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" required placeholder="your name" />
+          </div>
+          <div class="cf-field">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" />
+          </div>
+        </div>
+        <div class="cf-field">
+          <label for="subject">subject</label>
+          <input type="text" id="subject" name="subject" required placeholder="what's this about?" />
+        </div>
+        <div class="cf-field">
+          <label for="message">message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="put in your thoughts..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-fill btn-block">send message →</button>
+        <div class="cf-status" id="formStatus" role="status"></div>
+        <p class="cf-hint">// opens your email client. no data is stored on a server.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========= FOOTER ========= -->
+  <footer class="foot">
+    <div class="foot-row">
+      <span class="foot-brand">aditya.dev</span>
+      <span class="foot-note">Better With Every Bug</span>
+      <a href="#home" class="foot-top">↑ top</a>
+    </div>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
